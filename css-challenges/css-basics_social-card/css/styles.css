@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(155, 151, 178);
+  margin: 20px;
+}
+
+img {
+  border-radius: 20px;
+  border-color: rgb(216, 167, 202);
+  border-width: 30px;
+}
+
+h2 {
+  font-family: cursive;
+  text-decoration: underline rgb(216, 167, 202) 5px;
+  display: block;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: rgb(115, 166, 173) 10px;
+}
+
+button {
+  border-radius: 5px;
+  color: rgb(78, 255, 239);
+}
