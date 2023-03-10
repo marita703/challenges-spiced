@@ -1,2 +1,40 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: papayawhip;
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: rgb(65, 28, 174);
+  font-weight: bold;
+}
+
+section {
+    width: 500px;
+    height: 200px;
+    text align: center;
+    font-size: 20px;
+
+}
+
+img {
+    border-radius: 30px;
+}
+
+a[href^="https"] {
+    color: hotpink;
+}
+
+
+
