@@ -1,3 +1,4 @@
+@import "./variables.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,49 +6,89 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: papayawhip;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.847);
+}
+
+nav {
+  padding: 10px;
+  position: fixed;
+  background-color: var(--background-color);
+  position: fixed;
+  left: 0;
+  right: 0;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 3px;
+}
+
+nav a {
+  color: var(--fourth-color);
 }
 
 header {
+  position: static;
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  color: var(--main-color);
+  border: 3px solid var(--secondary-color);
+}
+
+.title {
+  position: relative;
+  top: 60px;
+  right: 50%;
+  transform: translate(-50%);
+}
+
+.myphoto {
+  padding: 20px;
+  border-radius: 200px;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+
+.card {
   margin: 20px;
   padding: 30px;
-  text-align: justify;
+  border: 3px solid var(--secondary-color);
 }
 
-h1,
-h2 {
-  color: rgb(65, 28, 174);
-  font-weight: bold;
+.card__title {
+  color: var(--third-color);
 }
 
-section {
-  width: 500px;
-  height: 300px;
-  margin: 20px;
-  padding: 30px;
-}
-.contactme {
-  width: 500px;
-  height: 50px;
-  margin: 20px;
-  padding: 30px;
+.card__text {
+  color: white;
 }
 
-.aboutme {
-  width: 500px;
-  height: 500px;
-  margin: 20px;
-  padding: 30px;
+.card__list {
+  color: white;
 }
 
-img {
-  border-radius: 30px;
+.card__list a {
+  color: var(--fourth-color);
 }
 
-a[href^="https"] {
-  color: hotpink;
-}
-
-li::after {
+footer {
+  padding: 10px;
+  position: fixed;
+  background-color: var(--background-color);
+  left: 0;
+  right: 0;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  z-index: 1;
 }

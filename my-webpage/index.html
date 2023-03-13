@@ -8,23 +8,32 @@
     <link rel="stylesheet" href="./css /styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="https://www.google.com/">Google</a>
-        <a href="https://www.google.com/">Google</a>
-        <a href="https://www.google.com/">Google</a>
-      </nav>
-      <h1>Maria del Mar Martinez</h1>
-      <img src="./Public/IMG_2769 (1).jpg" height="200" width="200" />
-    </header>
+    <nav>
+      <ul>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+      </ul>
+    </nav>
     <main>
-      <section class="contactme">
-        <h3>Contact me!</h3>
-        <p>mariadelmar.martinezr@gmail.com</p>
+      <header>
+        <h1 class="title">Maria del Mar Martinez</h1>
+      </header>
+
+      <img
+        class="myphoto"
+        src="./Public/IMG_2769 (1).jpg"
+        height="200px"
+        width="200px"
+      />
+
+      <section class="card card--contactme">
+        <h2 class="card__title">Contact me!</h2>
+        <p class="card__text">mariadelmar.martinezr@gmail.com</p>
       </section>
-      <section class="aboutme">
-        <h2>About me:</h2>
-        <p>
+      <section class="card card--aboutme">
+        <h2 class="card__title">About me:</h2>
+        <p class="card__text">
           Hey, I'm Mar. I'm fascinated by the world of cryptocurrency and how
           it's revolutionizing the way we handle finances. I believe that crypto
           will change the world in significant ways, and I love keeping up with
@@ -37,18 +46,18 @@
           bit about me! Thanks for taking the time to read.
         </p>
       </section>
-      <section>
-        <h2>Where you can find me:</h2>
-        <ul>
+      <section class="card card--whereyoucanfindme">
+        <h2 class="card__title">Where you can find me:</h2>
+        <ul class="card__list">
           <li>
             <a href="https://www.linkedin.com/in/maramartinez/"> linkedin</a>
           </li>
           <li><a href="https://github.com/marita703"> github</a></li>
         </ul>
       </section>
-      <section>
-        <h2>My profesional Experience</h2>
-        <ul>
+      <section class="card card--profesionalexperience">
+        <h2 class="card__title">My profesional Experience</h2>
+        <ul class="card__list">
           <li>Full stack Junior 2023</li>
           <li>Support Engineer 2020-2022</li>
           <li>Test Engineer 2019</li>
