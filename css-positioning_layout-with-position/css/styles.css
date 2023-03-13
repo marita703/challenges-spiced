@@ -22,8 +22,11 @@ body {
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px;
-  position: sticky;
+  position: fixed;
+  right: 0px;
+  left: 0;
   top: 0px;
+  z-index: 1;
 }
 
 .header__text {
@@ -43,8 +46,11 @@ body {
   background: #140523;
   color: #ffffff;
   height: 48px;
-  position: sticky;
+  position: fixed;
   bottom: 0px;
+  z-index: 1;
+  right: 0;
+  left: 0;
 }
 
 /**
@@ -74,8 +80,8 @@ body {
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 5px;
+  right: 5px;
 }
 
 /**
@@ -96,7 +102,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  position: sticky;
-  bottom: 0px;
-  left: 0px;
+  position: fixed;
+  bottom: 60px;
+  right: 0px;
 }
