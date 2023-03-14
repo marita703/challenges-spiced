@@ -243,11 +243,24 @@ CSS when certain conditions that we declare are met - such as a certain viewport
 width, etc. */
 
 /* Media Query Tablet */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media screen and (min-width: 500px) {
+  .card-section > * {
+    width: 40vw;
+  }
+  .card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 
 /* Media Query Desktop */
-/* --- */
-/* Replace this comment with your media query. */
-/* --- */
+
+@media screen and (min-width: 1200px) {
+  .--forest {
+    width: 100%;
+
+    height: 40vh;
+  }
+}
