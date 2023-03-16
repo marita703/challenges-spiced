@@ -5,3 +5,39 @@
   --third-color: rgb(6, 214, 160);
   --fourth-color: rgb(255, 209, 102);
 }
+
+@font-face {
+  font-family: brewbery;
+  src: url("/Public/Fonts/Art\ Brewery.ttf");
+}
+
+div {
+  font-family: brewbery;
+}
+
+@font-face {
+  font-family: ubuntuTitle;
+  src: url("/Public/Fonts/Ubuntu-Title.ttf");
+}
+
+div {
+  font-family: ubuntuTitle;
+}
+
+@font-face {
+  font-family: poriet;
+  src: url("/Public/Fonts/PoiretOne-Regular.ttf");
+}
+
+div {
+  font-family: poriet;
+}
+
+@font-face {
+  font-family: quirky;
+  src: url("/Public/Fonts/QuirkyRobot.ttf");
+}
+
+div {
+  font-family: quirky;
+}
