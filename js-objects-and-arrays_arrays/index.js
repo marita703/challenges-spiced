@@ -40,7 +40,7 @@ console.log(fruits);
 
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
-const otherArray = nestedNumbers[1][(2)[0]];
+const otherArray = nestedNumbers[1][2][0];
 
 console.log(otherArray);
 
