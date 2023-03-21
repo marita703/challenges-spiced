@@ -6,7 +6,10 @@ console.clear();
    The formula is: square = number * number
 */
 
-function printSquare(number) {}
+function printSquare(number) {
+  let squparam = number * number;
+  console.log(squparam);
+}
 
 printSquare(3);
 printSquare(5);
@@ -19,8 +22,14 @@ printSquare(5);
 
 // Uncomment the following function calls and implement the function printCircumference
 
-// printCircumference(4);
-// printCircumference(6);
+function printCircumference (radius) {
+let circumference = Math.PI * 2 * radius;
+console.log("circumference:" circumference);
+
+}
+
+printCircumference(4);
+printCircumference(6);
 
 /*
 3: We want to use a function which accepts the width and length of a rectangle
@@ -30,7 +39,15 @@ printSquare(5);
    The formula is: area = width * length
 */
 
+
+
 // Uncomment the following function calls and implement the function printRectangleArea
 
-// printRectangleArea(5, 7);
-// printRectangleArea(3, 4));
+function printRectangleArea (width, length){
+   let areaRectangle = width * length;
+   console.log(areaRectangle);
+}
+
+printRectangleArea(5, 7);
+printRectangleArea(3, 4));
+
