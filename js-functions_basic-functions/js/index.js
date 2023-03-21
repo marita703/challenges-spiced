@@ -10,6 +10,13 @@ console.clear();
 
 // --v-- write your code here --v--
 
+let bookData = {
+  "Book Title": "Que viva la musica",
+  author: "Andres Caicedo",
+  rating: 5,
+  numberOfSales: 110,
+};
+
 // --^-- write your code here --^--
 
 /*
@@ -26,6 +33,19 @@ Then log all variables to the console again.
 
 // --v-- write your code here --v--
 
+console.log("Book Title:", bookData["Book Title"]);
+console.log("Author:", bookData.author);
+console.log("Raiting:", bookData.rating);
+console.log("Number of Sales:", bookData.numberOfSales);
+
+bookData.numberOfSales += 1;
+bookData.rating = 4.8;
+
+console.log("Book Title:", bookData["Book Title"]);
+console.log("Author:", bookData.author);
+console.log("Raiting:", bookData.rating);
+console.log("Number of Sales:", bookData.numberOfSales);
+
 // --^-- write your code here --^--
 
 /*
@@ -37,5 +57,13 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+
+function LogBookData(obj) {
+  for (const key in obj) {
+    console.log(`${key}: ${obj[key]}`);
+  }
+}
+
+LogBookData(bookData);
 
 // --^-- write your code here --^--
