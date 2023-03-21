@@ -30,9 +30,9 @@ pizzaInput2.addEventListener("input", () => {
 // Task 1
 
 function calculatePizzaGain(diameter1, diameter2) {
-  let areaPizza1 = Math.PI * Math.pow(diameter1, 2);
+  let areaPizza1 = Math.PI * Math.pow(diameter1 / 2, 2);
   console.log("area pizza1", areaPizza1);
-  let areaPizza2 = Math.PI * Math.pow(diameter2, 2);
+  let areaPizza2 = Math.PI * Math.pow(diameter2 / 2, 2);
   console.log("area pizza2", areaPizza2);
   let pizzaGainPercentage = ((areaPizza2 - areaPizza1) / areaPizza1) * 100;
   console.log("pizza Gain:", pizzaGainPercentage);
