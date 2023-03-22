@@ -21,4 +21,28 @@ For that:
 
 const progressBar = document.querySelector('[data-js="progress-bar"]');
 
-function calculateScrollPercentage() {}
+// Here we just add the listener, not to the progress bar, but to the whole document...
+document.addEventListener("scroll", () => {
+  console.log("scroling");
+
+  const percentage = calculateScrollPercentage();
+
+  progressBar.style.width = percentage;
+});
+
+function calculateScrollPercentage() {
+  let yPosition = window.scrollY;
+  let windowSize = window.innerHeight;
+  let webpageSize = document.body.clientHeight;
+  let maxScrollSize = webpageSize - windowSize;
+
+  // I do this console log so I can see it on the web dev tools
+
+  console.log("yPosition:", yPosition, "maxScrollSize", maxScrollSize);
+
+  let percentageScrolled = (yPosition / maxScrollSize) * 100;
+
+  return percentageScrolled + "%";
+
+  // if I add a string to a number it will atomatically will turn into a string completelly
+}
