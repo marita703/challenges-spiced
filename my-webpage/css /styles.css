@@ -1,4 +1,5 @@
 @import "./variables.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +13,7 @@ body {
 
 main {
   width: 100%;
-  margin: 8vh 0;
+  margin: 12vh 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -94,6 +95,11 @@ header {
 
 .card__list a {
   color: var(--fourth-color);
+}
+
+form {
+  color: aliceblue;
+  width: 60%;
 }
 
 footer {
