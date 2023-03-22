@@ -1,0 +1,89 @@
+console.clear();
+
+/*
+Rewrite the following functions as arrow functions.
+Use implicit returns when possible
+*/
+
+//ORIGINAL FUNCTION
+// function getCurrentHour() {
+//   const now = new Date();
+//   const currentHour = now.getHours();
+//   if (currentHour === 0) {
+//     return "12am";
+//   } else if (currentHour === 12) {
+//     return "12pm";
+//   } else if (currentHour <= 11) {
+//     return currentHour + "am";
+//   } else {
+//     return currentHour - 12 + "pm";
+//   }
+// }
+
+const getCurrentHour = () => {
+  const now = new Date();
+  const currentHour = now.getHours();
+  if (currentHour === 0) {
+    return "12am";
+  } else if (currentHour === 12) {
+    return "12pm";
+  } else if (currentHour <= 11) {
+    return currentHour + "am";
+  }
+  return currentHour - 12 + "pm";
+};
+
+//ORIGINAL FUNCTION
+// function getVectorLength(x, y, z) {
+//   return (x ** 2 + y ** 2 + z ** 2) ** 0.5;
+// }
+
+const getVectorLength = (x, y, z) => (x ** 2 + y ** 2 + z ** 2) ** 0.5;
+
+// Original FUNCTION
+// function cleanInput(string) {
+//   return string.toLowerCase().trim();
+// }
+
+const cleanInput = (string) => string.toLowerCase().trim();
+
+/*
+Rewrite the following arrow functions as classic functions.
+*/
+
+//Original Function
+//  const isOddAndSmall = (number) => {
+//   if (number > 10) {
+//     return false;
+//   }
+
+//   if (number % 2 === 0) {
+//     return false;
+//   }
+
+//   return true;
+// };
+
+function isOddAndSmall(number) {
+  if (number > 10) {
+    return false;
+  } else if (number % 2 === 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+//Original function
+// const add3 = (a, b, c) => a + b + c;
+
+function add3(a, b, c) {
+  return a + b + c;
+}
+
+//Original Function
+// const repeat10 = (string) => string.repeat(10);
+
+function repeat10(string) {
+  return string.repeat(10);
+}
