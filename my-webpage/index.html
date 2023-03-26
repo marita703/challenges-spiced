@@ -35,14 +35,14 @@
           </p>
         </section>
       </header>
-          
-      <section class="card card--contactme">
+      <div class="container">
+        <section class="card card--contactme">
         <h2 class="card__title">Contact me!</h2>
         <p class="card__text">mariadelmar.martinezr@gmail.com</p>
-      </section>
+        </section>
 
 
-      <section class="card card--whereyoucanfindme">
+        <section class="card card--whereyoucanfindme">
         <h2 class="card__title">Where you can find me:</h2>
         <ul class="card__list">
           <li>
@@ -50,8 +50,8 @@
           </li>
           <li><a href="https://github.com/marita703"> github</a></li>
         </ul>
-      </section>
-      <section class="card card--profesionalexperience">
+        </section>
+        <section class="card card--profesionalexperience">
         <h2 class="card__title">My profesional Experience</h2>
         <ul class="card__list">
           <li>Full stack Junior 2023</li>
@@ -60,8 +60,8 @@
           <li>Comunity Tutor 2017-2018</li>
           <li>Project Manager 2016-2017</li>
         </ul>
-      </section>
-      <form aria-label="title" action="./thanks.html">
+        </section>
+        <form aria-label="title" action="./thanks.html">
 
         <fieldset>
           <legend> Enter your information</legend>
@@ -69,7 +69,7 @@
           <label for="name"> Name</label>
 
           <!-- If I want to see a preview text on the textbox, then I add the atribute "placeholder" and then whatever I want to appear there -->
-<!-- if you want to make some fields required then you put at the end required -->
+          <!-- if you want to make some fields required then you put at the end required -->
           <input type="text" name="name" id="name" placeholder="Who are you" required>
 
           <label for="Email"></label>
@@ -114,27 +114,27 @@
         </div>
 
         <div>
-<label for="pizza-choice">Choose your favorite pizza flavor</label>
-<input list="Pizzas" id="pizza-choice" name="pizza-choice" >
-<datalist id="pizza">
+          <label for="pizza-choice">Choose your favorite pizza flavor</label>
+          <input list="Pizzas" id="pizza-choice" name="pizza-choice" >
+          <datalist id="pizza">
 <option value="Margarita"></option>
 <option value="Peperoni"></option>
 <option value="Fungi"></option>
 <option value="Salami"></option>
 
-</datalist>
-      </div>
-      </fieldset>
+          </datalist>
+        </div>
+        </fieldset>
 
-<!-- whenever you have a button inside a form, it will by default, submit the form -->
+          <!-- whenever you have a button inside a form, it will by default, submit the form -->
         <button type="submit">submit</button>
 
         <!-- when I press submit, then all the information by default in the URL -->
         <!-- this will be changed later by JS!! -->
 
       </form>
-
+    </div>
+  </main>
       <footer>Copyright &copy;</footer>
-    </main>
   </body>
 </html>
