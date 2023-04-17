@@ -12,13 +12,15 @@ export default function PokemonList() {
         const data = await response.json();
         setPokemon(data);
         console.log("data", data);
+        // please always console log the whole new object, because it might be empty.
         console.log("pokemon", pokemon);
       } catch (error) {
         console.log(error);
       }
     }
-
+    // we load the function, inside the useEffect hook.
     loadPokemon();
+    // the second argument of use effect is its dependencies, so this will load only many times when url changes.
   }, [url]);
 
   function handleNext() {
@@ -34,6 +36,7 @@ export default function PokemonList() {
       <button
         type="button"
         onClick={handlePrevious}
+        // here we check if pokemon has a previous property, if not (in the case of the first page), we render a button with the property disabled.
         disabled={!pokemon.previous}
       >
         Previous Page
@@ -42,6 +45,7 @@ export default function PokemonList() {
         Next Page
       </button>
       <ul>
+        {/* we have to use this sintax in order to see if pokemon exists, if it is true, then we can check if pokemon.results exits, and if it does, then we can map on it...  */}
         {pokemon &&
           pokemon.results &&
           pokemon.results.map(({ name }) => <li key={name}>{name}</li>)}
