@@ -7,7 +7,7 @@ export default function FavoriteButton({ onToggleFavorite, isFavorite, id }) {
     <button
       className="favorite-button"
       onClick={() => {
-        console.log("I clicked on", id);
+        console.log("I clicked on:", id);
         onToggleFavorite(id);
       }}
       aria-label="favorite"

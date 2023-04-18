@@ -56,11 +56,12 @@ function App() {
   function handleToggleFavorite(id) {
     setEntries(
       entries.map((entry) =>
-        entry.id === id ? { ...entry, isliked: !entry.isliked } : entry
+        entry.id === id ? { ...entry, isFavorite: !entry.isFavorite } : entry
       )
     );
   }
 
+  console.log("entries", entries);
   return (
     <div className="app">
       <Header />

@@ -9,6 +9,7 @@ export default function Entry({
   id,
   isFavorite,
 }) {
+  console.log("isFavorite", isFavorite);
   return (
     <article className="entry">
       <time className="entry__date">{date}</time>
