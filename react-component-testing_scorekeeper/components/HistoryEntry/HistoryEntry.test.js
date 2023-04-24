@@ -14,6 +14,7 @@ test("renders name of game and 'show score' button only", () => {
   );
 
   const nameOfGame = screen.getByText(/dodelido/i);
+  // change the name for:Display more, and not how score.
   const button = screen.getByRole("button", { name: /Display more/i });
 
   expect(nameOfGame).toBeInTheDocument();
