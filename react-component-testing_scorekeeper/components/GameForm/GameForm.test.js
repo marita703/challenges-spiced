@@ -42,6 +42,7 @@ test("submits the correct form data when every field is filled out", async () =>
   const handleCreateGame = jest.fn();
   // then we create a fictional user that is going to interact with the button:
   const user = userEvent.setup();
+
   render(<GameForm onCreateGame={handleCreateGame} />);
 
   const nameOfGame = screen.getByLabelText("Name of game");
