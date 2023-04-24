@@ -40,5 +40,6 @@ test("calls callback on every user input", async () => {
   const input = screen.getByLabelText("labelText");
   expect(input).toBeInTheDocument();
 
-  await user.type(input, "Game of Thrones");
+  await user.type(input, "abc");
+  expect(handleCheck).toHaveBeenCalled(3);
 });
