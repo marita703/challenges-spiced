@@ -4,7 +4,8 @@ import { useRouter } from "next/router";
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Details() {
-  const { data } = useSWR("/api/products", fetcher);
+  // here we can also get an error... 
+  const { data, error  } = useSWR("/api/products", fetcher);
   console.log("data: ", data);
 
   const router = useRouter();
@@ -17,7 +18,12 @@ export default function Details() {
 
   if (!data) {
     return <h1>loading..</h1>;
-  } else {
+  } 
+
+  if(error) {
+    console.log(error);
+    return <h1>Something is wrong</h1>
+  }
     return (
       <>
         <h2>{element.name}</h2>
