@@ -24,7 +24,7 @@ export default function Details() {
     console.log(error);
     return <h1>Something is wrong</h1>
   }
-    return (
+    return (  
       <>
         <h2>{element.name}</h2>
         <span>{element.price}</span>
